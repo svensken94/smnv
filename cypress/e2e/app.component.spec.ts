@@ -4,6 +4,6 @@ describe('Counter', () => {
 	})
 
 	it('has the correct title', () => {
-		cy.title().should('equal', 'Angular Workshop: Counters')
+		cy.title().should('equal', 'Smnv')
 	})
 })
