@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'
+import { Component, inject } from '@angular/core'
+import { Title } from '@angular/platform-browser'
 import { RouterOutlet } from '@angular/router'
 
 @Component({
@@ -6,8 +7,12 @@ import { RouterOutlet } from '@angular/router'
 	standalone: true,
 	imports: [RouterOutlet],
 	templateUrl: './app.component.html',
-	styleUrls: ['./app.component.scss'],
+	styles: [],
 })
 export class AppComponent {
-	title = 'smnv'
+	title = inject(Title)
+
+	constructor() {
+		this.title.setTitle('Vlad Simonov | Personal site')
+	}
 }

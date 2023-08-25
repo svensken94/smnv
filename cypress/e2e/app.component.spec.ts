@@ -1,9 +1,13 @@
-describe('Counter', () => {
+describe('Application requirements', () => {
 	beforeEach(() => {
 		cy.visit('/')
 	})
 
-	it('has the correct title', () => {
-		cy.title().should('equal', 'Smnv')
+	it('must have initial title', () => {
+		cy.title().should('equal', 'Vlad Simonov | Personal site')
+	})
+
+	it('must have router outlet', () => {
+		cy.get('router-outlet').should('exist')
 	})
 })

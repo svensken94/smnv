@@ -1,5 +1,7 @@
 import { AppComponent } from 'src/app/app.component'
 
-it('mounts', () => {
-	cy.mount(AppComponent)
+describe('should mount', () => {
+	it('mounts', () => {
+		cy.mount(AppComponent)
+	})
 })
