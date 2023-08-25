@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  flex: 1;
+
+  div {
+    height: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-decoration: none;
+    gap: 0.125rem;
+    color: var(--tab-default);
+    font-size: 0.9375rem;
+    border-radius: 0.75rem;
+    appearance: none;
+
+    &:empty {
+      display: none;
+    }
+
+    &.active {
+      background-color: var(--tab-active-bg);
+      color: var(--tab-active-text);
+    }
+  }
+
+  &::ng-deep {
+    ng-icon {
+      font-size: 1.5rem;
+      color: currentColor;
+    }
+  }
+}

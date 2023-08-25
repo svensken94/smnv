@@ -1,0 +1,59 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50vh;
+  gap: 2rem;
+  justify-content: center;
+
+  .timer {
+    text-align: center;
+    font-size: 7rem;
+    font-weight: 200;
+    letter-spacing: -0.1rem;
+  }
+
+  .timer-actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+
+    .timer-action {
+      width: 5.25rem;
+      height: 3.5rem;
+      border-radius: 1rem;
+      background-color: var(--theme-background, #000);
+      color: var(--theme-text, #fff);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+
+      &.size-large {
+        width: 5.625rem;
+        height: 5.625rem;
+        border-radius: 50%;
+        font-size: 3.25rem;
+      }
+
+      // Color themes
+
+      &.action-main {
+        --theme-background: var(--indigo-500);
+        --theme-text: var(--indigo-50);
+      }
+
+      &.action-warning {
+        --theme-background: var(--orange-100);
+        --theme-text: var(--orange-500);
+      }
+
+      &.action-text {
+        --theme-background: var(--slate-100);
+        --theme-text: var(--slate-500);
+        font-size: 1.375rem;
+      }
+    }
+  }
+}

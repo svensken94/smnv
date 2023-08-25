@@ -1,0 +1,11 @@
+@use '../colors.themes';
+
+@mixin theme {
+  @include colors.slate;
+  @include colors.indigo;
+  @include colors.orange;
+
+  --tab-default: var(--slate-500);
+  --tab-active-bg: var(--indigo-50);
+  --tab-active-text: var(--indigo-600);
+}
