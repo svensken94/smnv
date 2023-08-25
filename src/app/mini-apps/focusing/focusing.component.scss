@@ -1,0 +1,17 @@
+@use 'projects/ui/src/lib/themes/mini-apps/focusing.app';
+
+:host {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  background-color: var(--color);
+
+  .app-content {
+    flex: 1;
+  }
+}
+
+:host {
+  @include focusing.theme;
+}

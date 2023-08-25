@@ -1,0 +1,11 @@
+:host {
+  padding: 0rem 1.75rem 1.75rem 1.75rem;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+  width: 100%;
+
+  &:empty {
+    display: none;
+  }
+}

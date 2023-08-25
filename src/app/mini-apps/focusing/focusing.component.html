@@ -1,0 +1,17 @@
+<div class="app-content">
+	<router-outlet data-cy="focusing-outlet"></router-outlet>
+</div>
+<ui-tabs data-cy="tabs">
+	<ui-tab path="statistics" data-cy="stats-link">
+		<ng-icon name="tablerChartArcs3"></ng-icon>
+		Statistics
+	</ui-tab>
+	<ui-tab path="timer" data-cy="timer-link">
+		<ng-icon name="tablerClock"></ng-icon>
+		Focusing
+	</ui-tab>
+	<ui-tab path="profile" data-cy="profile-link">
+		<ng-icon name="tablerUserCircle"></ng-icon>
+		Profile
+	</ui-tab>
+</ui-tabs>
