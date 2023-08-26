@@ -31,8 +31,8 @@ it('has only text if icon not provided', () => {
 		}
 	)
 
-	cy.get('[data-cy="tab"] a').should('be.visible')
-	cy.get('[data-cy="tab"] a').should('not.be.empty')
+	cy.get('[data-cy="tab"] div').should('be.visible')
+	cy.get('[data-cy="tab"] div').should('not.be.empty')
 })
 
 it('must be not visible if no icon and text', () => {
@@ -45,6 +45,6 @@ it('must be not visible if no icon and text', () => {
 		}
 	)
 
-	cy.get('[data-cy="tab"] a').should('not.be.visible')
-	cy.get('[data-cy="tab"] a').should('be.empty')
+	cy.get('[data-cy="tab"] div').should('not.be.visible')
+	cy.get('[data-cy="tab"] div').should('be.empty')
 })
