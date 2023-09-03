@@ -9,3 +9,8 @@ updates:
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"
+    ignore:
+      - dependency-name: "@angular/*"
+      - dependency-name: "@angular-devkit/*"
+      - dependency-name: "@angular-eslint/*"
+      - dependency-name: "ng-packagr"
