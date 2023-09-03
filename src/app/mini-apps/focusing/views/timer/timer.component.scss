@@ -1,0 +1,10 @@
+:host {
+  padding-bottom: 6.75rem;
+
+  section.sessions {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

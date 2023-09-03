@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  padding: 0.75rem 1rem 0.75rem 0.75rem;
+  background-color: var(--slate-100);
+  align-items: center;
+
+  .icon {
+    width: 2.75rem;
+    height: 2.75rem;
+    background-color: var(--slate-500);
+    margin-right: 1rem;
+  }
+
+  .info {
+    flex: 1;
+
+    .info-title {
+      font-size: 1.125rem;
+    }
+
+    .info-interval {
+      font-size: 15px;
+    }
+  }
+
+  .duration {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+}

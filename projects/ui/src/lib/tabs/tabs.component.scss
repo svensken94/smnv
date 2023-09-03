@@ -1,11 +1,22 @@
 :host {
-  padding: 0rem 1.75rem 1.75rem 1.75rem;
+  padding: 1rem 1.75rem 1.75rem 1.75rem;
   display: flex;
   gap: 2px;
   align-items: center;
   width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(1rem);
 
   &:empty {
     display: none;
+  }
+}
+
+:host::ng-deep {
+  ui-tab {
+    z-index: 1;
   }
 }

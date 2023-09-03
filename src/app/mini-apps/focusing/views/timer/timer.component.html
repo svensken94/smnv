@@ -1,1 +1,9 @@
 <app-timer-player></app-timer-player>
+<section class="sessions">
+	active:
+	<app-timer-session [session]="active" *ngIf="active$ | async as active" />
+	up next
+	<app-timer-session *ngFor="let item of sessions$ | async" [session]="item" />
+</section>
+<button (click)="addSession()">Add entity</button>
+<button (click)="reset()">DEBUG: reset</button>
