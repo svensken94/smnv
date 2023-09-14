@@ -14,3 +14,4 @@ updates:
       - dependency-name: "@angular-devkit/*"
       - dependency-name: "@angular-eslint/*"
       - dependency-name: "ng-packagr"
+      - dependency-name: "@typescript-eslint/*"
